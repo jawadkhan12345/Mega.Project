@@ -1,0 +1,8 @@
+img{
+    width: 55px;
+    height: 55px;
+}
+.items ul{
+    display: flex;
+    position: relative;
+}

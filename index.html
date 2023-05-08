@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery</title>
+    <style>  
+        .logo{
+            /* display: flex; */
+            width: 55px;
+            height: 55px;
+        }
+        .top{ 
+            display: flex;
+            /* border: 2px solid red; */
+
+        } 
+        .top::before{
+    content: "";
+    background: url("2.jpg.jpg") no-repeat center center/cover ;  
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 300px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+        }
+        .item{
+            display: flex;
+            list-style: none;
+            
+        }
+        .item li a{
+            text-decoration: none;
+            margin: 5px 7px;
+            padding: 5px 10px;
+            color: rgb(12, 38, 187);   
+            font-family: 'Baloo Bhai', cursive;
+   
+        }
+        .item li a:hover{
+            background-color: white;
+            color: black;
+            
+        }
+        #srch{
+            display: inline-block;
+            /* border: 2px solid red; */
+            right: 30px;
+            top: 15px;
+            position: absolute;
+            margin: 5px 5px;
+            padding: 4px 6px;
+            background-color: rgb(176, 184, 176);
+        }
+        
+        
+        .box{
+            display: flex;
+    flex-direction: column;
+    background: url("2.jpg.jpg") no-repeat center center/cover ;
+    padding:3px 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+    font-size: 18px;
+
+}
+.box h1{
+    background-color: rgb(17, 79, 100);
+}
+
+
+    .box::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+        }
+    .btn{
+        display:flex ;
+        justify-content: center;
+        align-content: center;
+        border-radius: 6px;
+        color: black;
+        /* margin: 3px 4px;
+        padding: 3px 4px; */
+        font-size: 15px;
+    }
+    .btn:hover{
+        background-color: black;
+        color: white;
+        cursor:pointer;
+    }
+    .varities{
+        display: flex;
+        flex-direction: columns;
+        margin: 34px 9px;
+        padding: 20px; 
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(203, 214, 213);
+        border: 2px solid #61d38e;
+    }
+    .vrts{
+        display: flex;
+        flex-direction: column;
+        /* border-radius: 3px; */
+        width: 400px;
+        height: 200px auto; 
+        border: 2px solid #fbfbfb;
+
+    }
+    .vrts img{
+        padding: 3px 4px;
+    margin: auto;
+    height: 113px;
+    width: 190px;
+    }
+    .bigbox{
+        display: flex;
+        /* background-color: grey; */
+        justify-content: center;
+        align-items: center;
+        /* width: 70px;
+        height: 70px; */
+    }
+    .bigbox::before{
+        content: "";
+        position: absolute;
+        background: url("con0.jpg.jpg") no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    .contact{
+        /* display: flex; */
+        /* flex-direction: column; */ 
+        /* justify-content: center;
+        align-items: center; */
+        /* width: 30px; */
+        height: 150px;
+        /* margin: 4px;
+        padding: 7px; */
+        padding: 34px 4px;
+    }
+    .contact img{
+        height: 100px;
+    }
+    .lastsec{
+        /* background-color: pink; */
+        border: 2px solid black;
+        margin: 3px;
+        padding: 14px 7px;
+        width:100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        }
+    .lastsec::before{
+        content: "";
+        position: absolute;
+        background: url("lol.jpg") no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    .login{
+        margin: 6px 5px;
+    padding: 7px 0px
+    }
+    .login input{
+        margin: 2px 3px;
+        padding: 3px 4px;
+        width: 100%;
+        border-radius: 4px;
+    }
+    .login label{
+        font-size: 18px;
+        font-family:'Baloo Bhai', cursive;
+        color: white;
+    }
+    .login{
+        width: 100%;
+    }
+    
+    </style>
+</head>
+<body>
+    <header>    
+        <nav class="top">
+        <div>
+            <img src="logo.jpg" alt="truck" class="logo">
+        </div>
+        <div>
+            <ul class="item">
+               <li><a href=""> Home </a></li>
+               <li><a href=""> About Us </a></li>
+               <li><a href=""> Services </a></li>
+               <li><a href=""> Contact Us </a></li>
+
+            </ul>
+        </div>
+        <label for="Searching">
+        <input type="text" id="srch" placeholder="Search">
+    </label>
+    </nav>
+    </header>
+    <section class="box">
+        <h1>Welcome to Our Website</h1>
+        <!-- <h2>Fast Food</h2> -->
+    <p><center>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deleniti quaerat molestiae labor Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perferendNJKDSCNKJSDBjnakn nkcnkan najcnkjac</center></p>
+    <button class="btn">Order Now</button>
+</section>
+    <section class="varities-container">
+    <H1><center>Our Services</center></H1>
+    <div class="varities">
+    <div class="vrts">
+        <img src="1.jpg.jpg" alt="pia">
+    <h3>Fast Food</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit beatae iusto omnis labore eaque hic mollitia lorem34 </p>
+    </div>
+    <div class="vrts">
+        <img src="shake.jpg.jpg" alt="shake">
+    <h3>Shakes</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit beatae iusto omnis labore eaque hic mollitiA</p>
+    </div>
+    <div class="vrts">
+        <img src="del2.jpg.jpg" alt="delivery">
+    <h3>Food Delivery</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Oditsdc</p>
+    </div>
+</div>
+</section>
+<section>
+    <h2><center>Contact Us</center></h2>
+<div class="bigbox">
+    
+
+    <div class="contact">
+        <img src="con1.jpg.jpg">
+    </div>
+    <div class="contact">
+        <img src="con2.jpg.jpg">
+    </div>
+    <div class="contact">
+        <img src="con3.jpg.jpg">
+    </div>
+    <div class="contact">
+        <img src="con4.jpg.jpg">
+    </div> 
+</div>
+</section>
+<br><br><br>
+<section class="lastsec">
+    <h1 style="color: white;">Register Now</h1>
+    <form action="">
+        <div class="login">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter Your Name">
+        </div>
+        
+        <div class="login">
+            <label for="name">Email</label>
+            <input type="text" name="name" placeholder="Enter Your Email">
+        </div>
+        
+        <div class="login">
+            <label for="name">Password</label>
+            <input type="Password" name="name" placeholder="Enter Your Password">
+        </div>
+        <button class="btn">Login</button>
+    </form>
+</section>
+</body>
+</html>
